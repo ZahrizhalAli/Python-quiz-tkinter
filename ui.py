@@ -16,8 +16,8 @@ class QuizInterface:
         self.window.config(padx=20, pady=20, bg=THEME_COLOR)
 
         # Label
-        self.label = tkinter.Label(fg="White", text="Score = 0", bg=THEME_COLOR)
-        self.label.grid(row=0, column=1)
+        self.label = tkinter.Label(fg="White", font=("Arial", 15), text="Current Score = 0", bg=THEME_COLOR)
+        self.label.grid(row=0, column=0)
 
         # Canvas
         self.canvas = tkinter.Canvas(width=300, height=250, bg="white")
