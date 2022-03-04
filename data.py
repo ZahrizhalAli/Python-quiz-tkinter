@@ -1,7 +1,7 @@
 import requests
 import random
 
-response = requests.get(url="https://opentdb.com/api.php?amount=10&type=boolean")
+response = requests.get(url="https://opentdb.com/api.php?amount=10&category=18&type=boolean")
 data = response.json()
 
 
