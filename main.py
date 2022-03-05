@@ -3,7 +3,10 @@ from data import question_data
 from quiz_brain import QuizBrain
 import html
 from ui import QuizInterface
+from scoreboard import Scoreboard
 
+scoreboard = Scoreboard()
+print(scoreboard.high_score)
 question_bank = []
 for question in question_data:
     question_text = html.unescape(question["question"])
